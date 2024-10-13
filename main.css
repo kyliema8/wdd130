@@ -3,7 +3,7 @@ body {
     font-size: 24px;
 }
 nav, footer {
-    background-color: rgb(212, 142, 201);
+    background-color: rgb(181, 103, 170);
     text-align: center;
     display: flex;
     justify-content: space-around;
