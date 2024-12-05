@@ -1,0 +1,142 @@
+:root {
+    /* change the values below to your colors from your palette */
+    --primary-color: #8DA28F  ;
+    --secondary-color: #FEDECE ;
+    --accent1-color: #CBDBCD;
+    --accent2-color: #737A6E;
+  
+    /* change the values below to your chosen font(s) */
+    --heading-font: "Cinzel";
+    --paragraph-font: "Frank Ruhl Libre", Helvetica, sans-serif;
+    /* these colors below should be chosen from among your palette colors above */
+    --headline-color-on-white: #8DA28F;  /* headlines on a white background */ 
+    --headline-color-on-color: white; /* headlines on a colored background */ 
+    --paragraph-color-on-white: #737A6E; /* paragraph text on a white background */ 
+    --paragraph-color-on-color: white; /* paragraph text on a colored background */ 
+    --paragraph-background-color: #8DA28F  ;
+    --nav-link-color: #737A6E;
+    --nav-background-color: #D4AC0D;
+    --nav-hover-link-color: white;
+    --nav-hover-background-color: #737A6E;
+  }
+header {
+    background-color: #FEDECE;
+    display: grid;
+    grid-template-columns: 150px auto;
+}
+.logo {
+    width: 80px;
+    padding: 5px;
+}
+#logo_link {
+    padding-top: 5px;
+    justify-self: center;
+    align-self: center;
+}
+nav a{
+    text-align: center;
+    text-decoration: none;
+    color: white;
+    padding: 30px;
+    font-size: 25px;
+    
+}
+nav a:hover {
+    background-color: white;
+    color: #8DA28F;
+}
+nav {
+    display: flex;
+    justify-content: space-around;
+}
+h1, h2, h3, h4, h5, h6 {
+    font-family: var(--heading-font);
+    color: var(--headline-color-on-white);
+  }
+  h2 {
+    text-align: center;
+  }
+  h3 {
+    text-align: center;
+  }
+  h4 {
+    text-align: center;
+    font-size: 40px;
+  }
+  hr {
+    height: 3px;
+    margin: 35px 0;
+    background: var(--accent1-color);
+  }
+  h1 {
+    padding: 1em;
+    text-align: center;
+    color: var(--headline-color-on-color);
+    background-color: var(--paragraph-background-color);
+  }
+ main > h1, main > h2 {
+    color: var(--headline-color-on-color);
+  }
+  .home-grid {
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+  }
+  .p1 {
+    grid-column: 1/4;
+    grid-row: 1/2;
+    text-align: center;
+    font-size: 20px;
+    border: 3px #efadad99 solid;
+    background-color: #fff;
+    border-radius: 5px;
+    box-shadow: 3px 3px 9px rgba(241, 205, 205, 0.3);
+    padding: 10px;
+  }
+  .h2 {
+    grid-column: 1/2;
+    grid-row: 2/3;
+    text-align: center;
+  }
+  .home-img {
+    grid-column: 2/4;
+    grid-row: 2/4;
+    padding: 10px;
+  }
+  .h3 {
+    grid-column: 1/2;
+    grid-row: 3/4;
+    text-align: center;
+  }
+  .h4 {
+    grid-column: 1/4;
+    grid-row: 4/4;
+    text-align: center;
+  }
+  footer {
+    background-color: #FEDECE;
+    color: white;
+    padding: 25px 50px;
+    margin-top: 200px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+footer a {
+    color: white;
+}
+footer a:hover {
+    color: #8DA28F;
+}
+.icon {
+    width: 80px;
+    padding-top: 10px;
+}
+footer p {
+    font-size: 1.2em;
+}
+footer p a:hover {
+    text-decoration: underline;
+}    
+footer .social img {
+ padding-top: 15px; 
+}
